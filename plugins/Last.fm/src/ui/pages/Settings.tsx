@@ -87,6 +87,14 @@ export default React.memo(function Settings() {
             />
             <FormDivider />
             <FormSwitchRow
+                label="Use song information as activity name"
+                subLabel='Use "artist - songname" as activity name'
+                leading={<FormIcon source={getAssetIDByName("ic_headset_neutral")} />}
+                value={settings.listeningTo}
+                onValueChange={(value: boolean) => settings.listeningTo = value}
+            />
+            <FormDivider />
+            <FormSwitchRow
                 label="Hide when Spotify is running"
                 subLabel="Hide the status when a Spotify activity is detected"
                 leading={<FormIcon source={getAssetIDByName("img_account_sync_spotify_light_and_dark")} />}
