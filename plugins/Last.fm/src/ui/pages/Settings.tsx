@@ -89,8 +89,8 @@ export default React.memo(function Settings() {
             <FormSwitchRow
                 label="Use song information as activity name"
                 subLabel='Use "artist - songname" as activity name'
-                leading={<FormIcon source={getAssetIDByName("ic_headset_neutral")} />}
-                value={settings.listeningTo}
+                leading={<FormIcon source={getAssetIDByName("information")} />}
+                value={settings.altActivityName}
                 onValueChange={(value: boolean) => settings.listeningTo = value}
             />
             <FormDivider />
